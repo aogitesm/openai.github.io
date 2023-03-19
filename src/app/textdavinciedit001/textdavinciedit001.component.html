@@ -1,0 +1,13 @@
+<div class="container">
+    <form (submit)="generateText()">
+      <label for="prompt">Enter prompt:</label>
+      <input type="text" id="prompt" [(ngModel)]="prompt" required>
+      <button type="submit">Generate Text</button>
+    </form>
+  
+    <div *ngIf="response">
+      <h2>Generated Text:</h2>
+      <p>{{ response }}</p>
+    </div>
+  </div>
+  

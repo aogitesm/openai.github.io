@@ -1,0 +1,25 @@
+/* Center the form and image container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Add some margin to the input and button */
+  input[type=text], button {
+    margin: 10px;
+  }
+  
+  /* Add some padding to the button */
+  button {
+    padding: 10px;
+  }
+  
+  /* Style the image */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  

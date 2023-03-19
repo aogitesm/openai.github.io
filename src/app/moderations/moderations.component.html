@@ -1,0 +1,15 @@
+<div>
+  <form (submit)="onModerateText()">
+    <label for="inputText">Enter text:</label>
+    <input type="text" id="inputText" [(ngModel)]="inputText" required>
+    <button type="submit">Moderate Text</button>
+  </form>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+  <div *ngIf="outputText" class="output">
+    <p>Moderated text:</p>
+    <p>{{ outputText }}</p>
+  </div>
+</div>
+

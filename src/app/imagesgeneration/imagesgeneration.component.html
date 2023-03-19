@@ -1,0 +1,10 @@
+<div>
+    <label for="inputText">Enter prompt:</label>
+    <input type="text" id="inputText" [(ngModel)]="prompt" required>
+    <button (click)="generateImage()">Generate Image</button>
+  </div>
+  
+  <div *ngIf="imageSrc">
+    <img [src]="imageSrc" alt="Generated image">
+  </div>
+  
